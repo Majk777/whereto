@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@200;300;400;500;600;700;800&family=Teko:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Mukta", sans-serif;
+  }
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-4xl;
+  }
+  h4 {
+    @apply text-3xl;
+  }
+  h5 {
+    @apply text-2xl;
+  }
+  .border-wrapper {
+    @apply border-l-4 border-t-4 border-b-4 border-gold-600; 
+  }
+  .border-wrapper-post {
+    @apply border-r-4 border-t-4 border-b-4 border-gold-600 right-2; 
+
+}
+
+/* WORDPRESS COMMENTS AND FORM */
+
+
+.comments-title {
+  @apply font-bannerFont;
+}
+.comment-list li {
+  @apply mt-8  border-b-2 pb-4;
+}
+.comment-body p {
+  @apply mb-6 mt-4;
+}
+.comment-author {
+  @apply flex flex-row font-bold not-italic text-lg;
+}
+
+.fn {
+  @apply not-italic;
+}
+.says {
+  @apply hidden;
+}
+.fn {
+  @apply ml-6 flex flex-col justify-center;
+}
+.comment-meta {
+  @apply mt-2 mb-2;
+}
+.reply {
+  @apply mt-4 text-gold-600 mb-2;
+}
+.comment-reply-link {
+  @apply border-l-2 border-t-2 border-b-2 border-gold-600 p-2 font-bold;
+}
+.comment-respond {
+  @apply my-8;
+}
+.comment-reply-title {
+  @apply text-center;
+}
+.comment-form {
+  @apply w-11/12 mx-auto;
+}
+.comment-notes {
+  @apply w-11/12 mx-auto;
+}
+.comment-form textarea {
+  @apply w-full;
+}
+.comment-respond p {
+  @apply mt-2 mb-2;
+}
+.comment-respond input {
+  @apply border-b-2  px-4 py-2 focus:outline-none focus:ring-0 focus:border-b-2 focus:border-black mr-4;
+}
+.comment-respond textarea {
+  @apply border-b-2  px-4 py-2 focus:outline-none focus:ring-0 focus:border-b-2 focus:border-black mr-4;
+}
+.form-submit {
+  @apply bg-black text-white  w-fit;
+}
+.form-submit input {
+  @apply border-0 w-40 h-14;
+}
+.comment-form-cookies-consent input {
+  @apply w-auto;
+}
+.children {
+  @apply ml-16;
+}
+.children li {
+  @apply border-b-0;
+}
+.post-container > * {
+  @apply mt-10;
+}
+.wp-images > img {
+  @apply h-72;
+}
+.wp-block-image {
+  @apply flex justify-center;
+}

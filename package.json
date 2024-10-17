@@ -1,0 +1,17 @@
+{
+  "name": "whereto3",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "wpstart": "wp-scripts start"
+  },
+  "author": "Mike",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
